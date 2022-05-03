@@ -14,10 +14,10 @@
           - run: docker run -e CI=true phantomskiers/react-test npm test -- --coverage
      
           - name: Build prod images
-            run: docker build -t phantomskiers/multi-client ./client
-            run: docker build -t phantomskiers/multi-nginx ./nginx
-            run: docker build -t phantomskiers/multi-server ./server
-            run: docker build -t phantomskiers/multi-worker ./worker
+          - run: docker build -t phantomskiers/multi-client ./client
+          - run: docker build -t phantomskiers/multi-nginx ./nginx
+          - run: docker build -t phantomskiers/multi-server ./server
+          - run: docker build -t phantomskiers/multi-worker ./worker
 
           # - name: Generate deployment package
           #   run: zip -r deploy.zip . -x '*.git*'
