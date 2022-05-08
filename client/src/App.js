@@ -14,7 +14,7 @@ class App extends Component {
           <Link to='/otherpage'>Other Page</Link>
         </header>
         <div>
-          <h1>Multi-Docker React App</h1>
+          <h1>Multi-Docker React Application</h1>
           <Route exact path='/' component={Fib}/>
           <Route path='/otherpage' component={OtherPage}/>
         </div>
